@@ -1,0 +1,84 @@
+
+x
+.bg-aurochs {
+    width: 200px; height: 200px;
+    background: url('css_sprites.png') -970px -10px;
+}
+
+x
+.bg-bee {
+    width: 200px; height: 200px;
+    background: url('css_sprites.png') -650px -230px;
+}
+
+x
+.bg-botFront {
+    width: 200px; height: 200px;
+    background: url('css_sprites.png') -670px -600px;
+}
+
+x
+.bg-botTop {
+    width: 200px; height: 200px;
+    background: url('css_sprites.png') -10px -600px;
+}
+
+x
+.bg-brokenTree {
+    width: 200px; height: 100px;
+    background: url('css_sprites.png') -970px -450px;
+}
+
+x
+.bg-Chris {
+    width: 150px; height: 200px;
+    background: url('css_sprites.png') -970px -230px;
+}
+
+x
+.bg-chrisTree {
+    width: 300px; height: 300px;
+    background: url('css_sprites.png') -330px -10px;
+}
+
+x
+.bg-duckMom {
+    width: 300px; height: 200px;
+    background: url('css_sprites.png') -650px -10px;
+}
+
+x
+.bg-duckMomCry {
+    width: 300px; height: 200px;
+    background: url('css_sprites.png') -280px -330px;
+}
+
+x
+.bg-honey {
+    width: 200px; height: 200px;
+    background: url('css_sprites.png') -230px -600px;
+}
+
+x
+.bg-rope {
+    width: 200px; height: 200px;
+    background: url('css_sprites.png') -450px -600px;
+}
+
+x
+.bg-singleDuck {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -970px -570px;
+}
+
+x
+.bg-bear {
+    width: 250px; height: 250px;
+    background: url('css_sprites.png') -10px -330px;
+}
+
+x
+.bg-raft {
+    width: 300px; height: 300px;
+    background: url('css_sprites.png') -10px -10px;
+}

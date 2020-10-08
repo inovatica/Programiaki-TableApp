@@ -1,0 +1,56 @@
+.greetingContainer__wrap {
+  padding: 50px; }
+  .greetingContainer__wrap h2 {
+    color: #41463D;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px; }
+    .greetingContainer__wrap h2 span {
+      display: block;
+      padding-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+      color: #413C58; }
+  .greetingContainer__wrap button {
+    width: 100%;
+    padding: 40px;
+    margin-top: 20px;
+    outline: none;
+    background-color: #e0dee8;
+    border-radius: 10px;
+    border: 5px #413C58 solid;
+    font-family: inherit;
+    color: #413C58;
+    font-size: 26px;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+    cursor: pointer; }
+    .greetingContainer__wrap button a {
+      text-decoration: none;
+      border: 0px;
+      color: #413C58; }
+  .greetingContainer__wrap button:active {
+    background-color: #ffecd7; }
+
+@media screen and (min-width: 800px) {
+  .greetingContainer__wrap h1 {
+    font-size: 50px; }
+  .greetingContainer__wrap h2 {
+    margin-top: -10px;
+    margin-bottom: 30px; }
+  .greetingContainer__wrap button {
+    font-size: 32px; }
+  .greetingContainer__wrap button:active {
+    background-color: #ffecd7; } }
+@media screen and (min-width: 1200px) {
+  .greetingContainer__wrap h1 {
+    font-size: 50px; }
+  .greetingContainer__wrap h2 {
+    margin-top: -10px;
+    margin-bottom: 30px; }
+  .greetingContainer__wrap button {
+    font-size: 32px; }
+  .greetingContainer__wrap button:active {
+    background-color: #ffecd7; } }
+
+/*# sourceMappingURL=start-screen.css.map */

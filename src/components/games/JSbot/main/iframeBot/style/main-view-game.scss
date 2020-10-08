@@ -1,0 +1,483 @@
+@import "_variables";
+.mainTableSection{
+  width: 100%;
+  background-color: $mainLightGreen;
+  border-radius: 0% 0% 20px 20px;
+  &__wrap{
+    padding: 10px;
+    &__isOrderImportantContainer{
+      width: 100%;
+      box-sizing: border-box;
+      border: 5px solid $mainBlue;
+      border-radius: $buttonBorderRadius;
+      padding: 10px;
+      text-align: center;
+      div {
+        padding: 10px 5px 10px 5px;
+        justify-content: center;
+      }
+      label {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      input[type="radio"]{
+        opacity: 0;
+        +label::before{
+          content: "";
+          display: inline-block;
+          width: 34px;
+          height: 34px;
+          position: absolute;
+          transform: translate(-120%,-20%);
+          border: 2px solid $mainBlue;
+          border-radius: 50%;
+          box-sizing: border-box;
+        }
+        &:checked{
+          +label::before{
+            background-color: green;
+          }
+        }
+      }
+    }
+    &__controlTable{
+      padding-bottom: 10px;
+      width: 100%;
+      button{
+        display: block;
+        float: left;
+        width: 49%;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        border: 5px solid $mainBlue;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        border-radius: $buttonBorderRadius;
+        color: $mainBlue;
+        font-family: inherit;
+        font-size: 20px;
+        outline: none;
+        margin-top: 5px;
+      }
+    }
+    &__cardsTableContainer{
+      .singleCard{
+        min-height: 170px;
+        width: 32.32%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        float: left;
+        background-color: white;
+        border-bottom: 5px solid $mainBlue;
+        border-radius: 10px;
+        margin-top: 10px;
+        &__extraOptions{
+          button:first-of-type{
+            display: none;
+            padding: 2px;
+          }
+          button:nth-of-type(2){
+            span:nth-of-type(2){
+              display: none;
+            }
+            span:nth-of-type(1){
+              display: inline;
+            }
+          }
+          button:nth-of-type(3){
+            display: none;
+            padding: 2px;
+          }
+          button:nth-of-type(4){
+            display: none;
+          }
+          button{
+            display: block;
+            float: left;
+            width: 100%;
+            height: 40px;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            border: 5px solid $mainBlue;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            border-radius: $buttonBorderRadius;
+            color: $mainBlue;
+            font-family: inherit;
+            font-size: 20px;
+            outline: none;
+            padding-top: 5px;
+            background-color: $mainPink;
+          }
+        }
+        &__contentCart{
+
+          img{
+            width: 70%;
+            max-height: 90px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
+          span{
+            font-size: 18px;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+      .singleCardError{
+        background-color: red;
+      }
+      .singleCardEmpty{
+        height: 175px;
+        width: 32.32%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        float: left;
+        background-color: white;
+        border-bottom: 5px solid $mainBlue;
+        border-top: 5px solid $mainBlue;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        span:nth-of-type(2){
+          display: none;
+        }
+        span:nth-of-type(1){
+          display: block;
+        }
+        span{
+          font-size: 18px;
+          display: block;
+          text-align: center;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .singleEmptyNotAvaible{
+        background-color: lightgrey;
+        span:nth-of-type(1){
+          display: none;
+        }
+        span:nth-of-type(2){
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.cardChoiceSection{
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: $mainLightGreen;
+  &__wrap{
+  padding: 10px;
+    .singleCard{
+      min-height: 170px;
+      width: 32.32%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      float: left;
+      background-color: white;
+      border-bottom: 5px solid $mainBlue;
+      border-radius: 10px;
+      margin-top: 10px;
+      &__extraOptions{
+        button:first-of-type{
+          display: none;
+        }
+        button:nth-of-type(2){
+          display: none;
+        }
+        button:nth-of-type(3){
+          display: none;
+        }
+        button{
+          display: block;
+          float: left;
+          width: 100%;
+          height: 40px;
+          padding: 0px;
+          margin: 0px;
+          box-sizing: border-box;
+          border: 5px solid $mainBlue;
+          margin-left: 0.5%;
+          margin-right: 0.5%;
+          border-radius: $buttonBorderRadius;
+          color: $mainBlue;
+          font-family: inherit;
+          font-size: 20px;
+          outline: none;
+          padding-top: 5px;
+          background-color: $mainLightGreen;
+        }
+      }
+      &__contentCart{
+
+        img{
+          width: 70%;
+          max-height: 80px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+        span{
+          font-size: 18px;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+
+//od 500px w górę
+@media screen and (min-width: 500px) {
+  .mainTableSection{
+    &__wrap{
+      &__controlTable{
+        button{
+        }
+      }
+      &__cardsTableContainer{
+        .singleCard{
+          width: 24%;
+          &__extraOptions{
+            button:first-of-type{
+              display: block;
+            }
+            button:nth-of-type(3){
+              display: block;
+            }
+            button:nth-of-type(2){
+              span:nth-of-type(2){
+                display: inline;
+              }
+              span:nth-of-type(1){
+                display: none;
+              }
+            }
+            button:nth-of-type(4){
+              display: none;
+            }
+            button{
+              width: 32.32%;
+            }
+          }
+          &__contentCart{
+            img{
+            }
+            span{
+            }
+          }
+        }
+        .singleCardEmpty{
+
+          span{
+          }
+        }
+        .singleCardEmpty{
+          width: 24%;
+        }
+      }
+    }
+  }
+
+  .cardChoiceSection{
+    margin-top: 50px;
+    &__wrap{
+      .singleCard{
+        width: 24%;
+        &__extraOptions{
+          button:first-of-type{
+          }
+          button:nth-of-type(2){
+          }
+          button:nth-of-type(3){
+          }
+          button{
+          }
+        }
+        &__contentCart{
+
+          img{
+          }
+          span{
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//od 700px w górę
+@media screen and (min-width: 700px) {
+ 
+
+
+  .mainTableSection{
+    &__wrap{
+      &__isOrderImportantContainer{
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        border: 5px solid $mainBlue;
+        border-radius: $buttonBorderRadius;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      &__cardsTableContainer{
+        .singleCard{
+          width: 19%;
+          &__contentCart{
+            img{
+              width: 60%;
+              max-height: 100px;
+            }
+          }
+        }
+        .singleCardEmpty{
+          width: 19%;
+        }
+      }
+    }
+  }
+
+  .cardChoiceSection{
+    margin-top: 50px;
+    &__wrap{
+      .singleCard{
+        width: 19%;
+        &__contentCart{
+
+          img{
+            width: 60%;
+            max-height: 100px;
+          }
+          span{
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//od 1000px w górę
+@media screen and (min-width: 1000px) {
+  .mainWrap{
+    height: 100%;
+  }
+  .mainTableSection{
+    float: left;
+    width: 66%;
+    height: 100%;
+    &__wrap{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      &__controlTable{
+        padding-bottom: 10px;
+        width: 100%;
+        button{
+          display: block;
+          float: left;
+          width: 24%;
+          height: 120px;
+          padding: 0px;
+          margin: 0px;
+          box-sizing: border-box;
+          border: 5px solid $mainBlue;
+          margin-left: 0.5%;
+          margin-right: 0.5%;
+          border-radius: $buttonBorderRadius;
+          color: $mainBlue;
+          font-family: inherit;
+          font-size: 20px;
+          outline: none;
+          margin-top: 5px;
+        }
+      }
+      &__cardsTableContainer{
+        .singleCard{
+          width: 19%;
+          height: 180px;
+          &__contentCart{
+            img{
+              height: 120px;
+            }
+          }
+        }
+        .singleCardEmpty{
+          width: 19%;
+          height: 185px;
+        }
+      }
+    }
+  }
+
+  .cardChoiceSection{
+    float: left;
+    width: 34%;
+    height: 100%;
+    margin-top: 0px;
+    overflow: auto;
+    &__wrap{
+      .singleCard{
+        width: 32%;
+        &__contentCart{
+
+          img{
+            width: 80%;
+          }
+          span{
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#buttonNavigation{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 5px solid $mainBlue;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: $buttonBorderRadius;
+    color: $mainBlue;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    margin-top: 5px;
+    a{
+        text-decoration:none;
+        color: $mainBlue;
+        padding:10px;
+    }
+}
+
+.buttonDisabled {
+  background-color: grey !important;
+  opacity: 0.5;
+}

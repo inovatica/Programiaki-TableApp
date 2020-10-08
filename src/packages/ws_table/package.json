@@ -1,0 +1,11 @@
+{
+  "name": "ws_table",
+  "version": "1.0.0",
+  "description": "Component create model of the table meaning structure and names of rifd readers. It receive in an argument web socket messages and update model of the table.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomasz Nowakowski tnowakowski@inovatica.com",
+  "license": "ISC"
+}

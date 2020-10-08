@@ -1,0 +1,26 @@
+$buttonBorderOrange : #c83b1c;
+$buttonBackgroundGradientFrom : #ff4c24;
+$buttonBackgroundGradientTo : #e54420;
+@font-face {
+    font-family: "RussoOne-Regular";
+    src: url('./RussoOne-Regular.ttf') format("truetype");
+}
+
+$mainGrey: #41463D;
+$mainBlue: #413C58;
+$mainLight: #FFF8F0;
+$mainLightGreen: #C9ECCE;
+$mainPink: #E0ACD5;
+$veryBigFont: 3.4em;
+$bigFont: 1.2em;
+$normalFont: 1em;
+$smallFont: 0.8em;
+$verySmallFont: 0.6em;
+
+//buttons
+$buttonBgColor: lighten($mainBlue, 60%);
+$buttonBorderRadius: 10px;
+$buttonBorder: 5px $mainBlue solid;
+$buttonLetterColor: $mainBlue;
+$ButtonBgColorActive: darken($mainLight, 5%);
+$buttonTransitionDuration: 0.3s;

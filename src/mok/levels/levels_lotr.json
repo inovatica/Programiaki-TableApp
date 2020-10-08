@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Poziom 1",
+    "active": 1,
+    "game_id": 1,
+    "js": "-",
+    "css": "-",
+    "game": "lotr",
+    "avaible_cards": "1",
+    "isOrderImportant": "false"
+  },
+  {
+    "id": 2,
+    "name": "Poziom 2",
+    "active": 1,
+    "game_id": 1,
+    "js": "-",
+    "css": "-",
+    "game": "lotr",
+    "avaible_cards": "1",
+    "isOrderImportant": "true"
+  },
+  {
+    "id": 3,
+    "name": "Poziom 3",
+    "active": 1,
+    "game_id": 1,
+    "js": "-",
+    "css": "-",
+    "game": "lotr",
+    "avaible_cards": "8",
+    "isOrderImportant": "false"
+  },
+  {
+    "id": 4,
+    "name": "Poziom 4",
+    "active": 1,
+    "game_id": 1,
+    "js": "-",
+    "css": "-",
+    "game": "lotr",
+    "avaible_cards": "10",
+    "isOrderImportant": "false"
+  },
+  {
+    "id": 5,
+    "name": "Poziom 5",
+    "active": 1,
+    "game_id": 1,
+    "js": "-",
+    "css": "-",
+    "game": "lotr",
+    "avaible_cards": "10",
+    "isOrderImportant": "false"
+  },
+  {
+    "id": 6,
+    "name": "Poziom 6",
+    "active": 1,
+    "game_id": 1,
+    "js": "-",
+    "css": "-",
+    "game": "lotr",
+    "avaible_cards": "10",
+    "isOrderImportant": "false"
+  }
+]

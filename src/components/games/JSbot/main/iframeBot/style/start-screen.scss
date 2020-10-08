@@ -1,0 +1,84 @@
+@import "_variables";
+.greetingContainer{
+  &__wrap{
+    padding: 50px;
+    h2{
+      color: $mainGrey;
+      text-align: center;
+      padding-left: 14px;
+      padding-right: 14px;
+      span{
+        display: block;
+        padding-top: 10px;
+        font-weight: normal;
+        font-size: 20px;
+        color: $mainBlue;
+      }
+    }
+    button{
+      width: 100%;
+      padding: 40px;
+      margin-top: 20px;
+      outline: none;
+      background-color: lighten($mainBlue, 60%);
+      border-radius: 10px;
+      border: 5px $mainBlue solid;
+      font-family: inherit;
+      color: $mainBlue;
+      font-size: 26px;
+      font-weight: bolder;
+      transition-duration: 0.3s;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+        border: 0px;
+        color: $mainBlue;
+      }
+    }
+    button:active{
+      background-color: darken($mainLight, 5%);
+    }
+  }
+}
+@media screen and (min-width: 800px){
+  .greetingContainer{
+    &__wrap{
+      & h1{
+        font-size: 50px;
+      }
+      h2{
+        margin-top: -10px;
+        margin-bottom: 30px;
+        span{
+        }
+      }
+      button{
+        font-size: 32px;
+      }
+      button:active{
+        background-color: darken($mainLight, 5%);
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .greetingContainer{
+    &__wrap{
+      & h1{
+        font-size: 50px;
+      }
+      h2{
+        margin-top: -10px;
+        margin-bottom: 30px;
+        span{
+        }
+      }
+      button{
+        font-size: 32px;
+      }
+      button:active{
+        background-color: darken($mainLight, 5%);
+      }
+    }
+  }
+}

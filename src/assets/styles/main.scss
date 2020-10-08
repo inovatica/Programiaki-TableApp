@@ -1,0 +1,456 @@
+@import "components/_variable";
+@import "components/_background01";
+@import "components/_tiles";
+@import "components/_slowFlyAnimation";
+@import "components/animate";
+@import "components/maze";
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  height: 1080px;
+  width: 1920px;
+  overflow-x: hidden;
+
+  header {
+    position: relative;
+    width: 100%;
+    height: unset;
+    top: 0px;
+    text-align: center;
+  }
+
+  .buttonContainer {
+    a {
+      display: block;
+      position: absolute;
+      top: 650px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 95px;
+      border: 14px solid $buttonBorderOrange;
+      border-radius: 40px;
+      background: linear-gradient(40deg, $buttonBackgroundGradientFrom, $buttonBackgroundGradientTo);
+      text-decoration: none;
+      span {
+        font-family: 'RussoOne-Regular';
+        color: white;
+        font-size: 60px;
+        position: absolute;
+        top: 10px;
+        left: 150px;
+      }
+      img {
+        position: absolute;
+        width: 35px;
+        top: 22px; //muszę wpisać na sztywno bo animate.css nadpisuje translateY
+        left: 430px;
+        // transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+.mainContainerMiddle {
+
+  .levelsContainer {
+    text-align: center;
+    position: relative;
+    width: 40%;
+    left: 30%;
+
+    a {
+      display: block;
+      border: 10px solid #c83b1c;
+      border-radius: 40px;
+      background: linear-gradient(40deg, #ff4c24, #e54420);
+      text-decoration: none;
+      animation: quick 12s infinite;
+      font-family: 'RussoOne-Regular';
+      color: white;
+      font-size: 50px;
+      margin-top: 30px;
+      padding: 15px;
+
+      &:first-child{
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.headImage {
+  max-width: 1000px;
+  margin-top: 80px;
+}
+
+#app {
+  position: relative;
+}
+.backBtn{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 130px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background: url('../img/back.svg');
+  z-index: 10;
+}
+
+.nextBtn{
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  transform: rotate(180deg);
+  width: 130px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background: url('../img/back.svg');
+  z-index: 10;
+}
+
+.resetLvlBtn{
+  position: absolute;
+  bottom: -80px;
+  right: 80px;
+  transform: rotate(180deg);
+  width: 65px;
+  cursor: pointer;
+  height: 66px;
+  background-repeat: no-repeat;
+  background: url('../img/refresh.svg');
+  z-index: 10;
+}
+
+.hidden{
+  display: none;
+}
+
+//zoo
+.cardsSection{
+
+  &-1{
+    top: 34%;
+    width: 340px;
+    display: block;
+    left: calc(50% - 100px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+  }
+  &-2{
+    top: 34%;
+    width: 600px;
+    display: block;
+    left: calc(50% - 280px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      &:nth-of-type(2){
+        position: relative;
+        top: -15px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-3{
+    top: 34%;
+    width: 870px;
+    display: block;
+    left: calc(50% - 380px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      color: black;
+      &:nth-of-type(2){
+        animation-delay: 1s;
+        position: relative;
+        top: 30px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -15px;
+        animation-delay: 0.3s;}
+    }
+  }
+  &-4{
+    top: 34%;
+    width: 1140px;
+    display: block;
+    left: calc(50% - 525px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-5{
+    top: 34%;
+    width: 1350px;
+    display: block;
+    left: calc(50% - 660px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(2){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(5){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+    }
+  }
+  &-6, &-7, &-8, &-9, &-10{
+    top: 22%;
+    width: 1350px;
+    left: calc(50% - 660px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    &__singleSlot{
+
+    }
+  }
+  &-6{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+    }
+  }
+  &-7{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(8){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(7){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-8{
+    width: 1100px;
+    margin-left: 150px;
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(8){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(9){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-9{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(8){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(10){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-10{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(8){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.2s;}
+      &:nth-of-type(3){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 1s;}
+      &:nth-of-type(6){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 01.5s;}
+    }
+  }
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 25%;
+  left: 15%;
+  &__singleSlot{
+    animation: quick 10s linear infinite;
+    width: 200px;
+    float: left;
+    margin-right: 35px;
+    margin-left: 35px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 120px;
+    img{
+
+    }
+    img.actualImege{
+      position: absolute;
+      width: 120px;
+      // top: -40px;
+      bottom: 50px;
+      left: 40px;
+      // transform: translateX(-50%) !important; //animate.css psuje
+      z-index: 10;
+    }
+    img.placeholder{
+      position: relative;
+      width: 100%;
+      filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
+    }
+    span{
+
+    }
+    &--empty{
+      margin-top: 120px;
+      img.actualImege{
+        opacity: 0;
+      }
+      img.placeholder{
+
+      }
+      img.wrong{
+        display: none;
+      }
+    }
+    &--blocked{
+      img.actualImege, img.placeholder, img.wrong{
+        display: none;
+      }
+      span{
+        display: none;
+      }
+    }
+    &--wrong{
+      img.actualImege{
+        display: none;
+      }
+      img.placeholder{
+        display: block;
+      }
+      img.wrong{
+      }
+      span{
+        opacity: 0;
+      }
+    }
+  }
+}
+
+span{
+  &.red{color: red;}
+  &.navy-blue{color: #3C6A9D;}
+  &.green{color: #00B77E;}
+  &.orange{color: #FF9E57;}
+  &.pink{color: #FF3676;}
+  &.yellow{color: #FDD458;}
+  &.light-blue{color: #3BC5F1;}
+}

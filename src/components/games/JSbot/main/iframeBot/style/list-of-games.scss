@@ -1,0 +1,54 @@
+@import "_variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.gamesContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+button{
+  width: 100%;
+  padding: 40px;
+  margin-top: 20px;
+  outline: none;
+  background-color: lighten($mainBlue, 60%);
+  border-radius: 10px;
+  border: 5px $mainBlue solid;
+  font-family: inherit;
+  color: $mainBlue;
+  font-size: 26px;
+  font-weight: bolder;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  a {
+     text-decoration: none;
+    border: 0px;
+    color: $mainBlue;
+  }
+}
+button:active{
+  background-color: darken($mainLight, 5%);
+}
+
+h1 {
+  font-size: 50px;
+  padding-top: 40px;
+  font-family: 'Black Ops One', cursive;
+}
+.inactive {
+  background-color: lighten($mainBlue, 40%);
+}
+.inactive:active {
+  background-color: lighten($mainBlue, 20%);
+}

@@ -1,0 +1,11 @@
+{
+  "name": "websocket_message",
+  "version": "1.0.0",
+  "description": "Package listening on message event and do functions give to it in atrubutes ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomasz Nowakowski tnowakowski@inovatica.com",
+  "license": "ISC"
+}

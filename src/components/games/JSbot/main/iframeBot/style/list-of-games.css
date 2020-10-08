@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+.gamesContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px; }
+
+button {
+  width: 100%;
+  padding: 40px;
+  margin-top: 20px;
+  outline: none;
+  background-color: #e0dee8;
+  border-radius: 10px;
+  border: 5px #413C58 solid;
+  font-family: inherit;
+  color: #413C58;
+  font-size: 26px;
+  font-weight: bolder;
+  transition-duration: 0.3s;
+  cursor: pointer; }
+  button a {
+    text-decoration: none;
+    border: 0px;
+    color: #413C58; }
+
+button:active {
+  background-color: #ffecd7; }
+
+h1 {
+  font-size: 50px;
+  padding-top: 40px;
+  font-family: 'Black Ops One', cursive; }
+
+.inactive {
+  background-color: #a6a1bf; }
+
+.inactive:active {
+  background-color: #6e6595; }
+
+/*# sourceMappingURL=list-of-games.css.map */

@@ -1,0 +1,306 @@
+.cardsSection{
+  &-1{
+    top: 34%;
+    width: 340px;
+    display: block;
+    left: calc(50% - 100px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+  }
+  &-2{
+    top: 34%;
+    width: 600px;
+    display: block;
+    left: calc(50% - 280px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      &:nth-of-type(2){
+        position: relative;
+        top: -15px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-3{
+    top: 34%;
+    width: 870px;
+    display: block;
+    left: calc(50% - 380px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      color: black;
+      &:nth-of-type(2){
+        animation-delay: 1s;
+        position: relative;
+        top: 30px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -15px;
+        animation-delay: 0.3s;}
+    }
+  }
+  &-4{
+    top: 34%;
+    width: 1140px;
+    display: block;
+    left: calc(50% - 525px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-5{
+    top: 34%;
+    width: 1350px;
+    display: block;
+    left: calc(50% - 660px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(2){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(5){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+    }
+  }
+  &-6, &-7, &-8, &-9, &-10{
+    top: 22%;
+    width: 1350px;
+    left: calc(50% - 660px); //nie mogęłm zrobic translateX ponieważ animate.css się burzy i itak przestawia
+    &__singleSlot{
+
+    }
+  }
+  &-6{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+    }
+  }
+  &-7{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(8){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(7){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-8{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(8){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(9){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-9{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(6){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(8){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(10){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+    }
+  }
+  &-10{
+    .cardsSection__singleSlot{
+      &:nth-of-type(1){
+        animation-delay: 1.5s;
+        position: relative;
+        top: -25px;}
+      &:nth-of-type(3){
+        position: relative;
+        top: -55px;
+        animation-delay: 1s;}
+      &:nth-of-type(4){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.4s;}
+      &:nth-of-type(8){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 0.2s;}
+      &:nth-of-type(3){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 1s;}
+      &:nth-of-type(6){
+        position: relative;
+        top: 0px;
+        left: -10px;
+        animation-delay: 01.5s;}
+    }
+  }
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 25%;
+  left: 15%;
+  &__singleSlot{
+    animation: quick 10s linear infinite;
+    width: 200px;
+    float: left;
+    margin-right: 35px;
+    margin-left: 35px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 120px;
+    img{
+
+    }
+    img.actualImege{
+      position: absolute;
+      width: 120px;
+      // top: -40px;
+      bottom: 50px;
+      left: 40px;
+      // transform: translateX(-50%) !important; //animate.css psuje
+      z-index: 10;
+    }
+    img.placeholder{
+      position: relative;
+      width: 100%;
+      filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.25));
+    }
+    span{
+
+    }
+    &--empty{
+      margin-top: 120px;
+      img.actualImege{
+        opacity: 0;
+      }
+      img.placeholder{
+
+      }
+      img.wrong{
+        display: none;
+      }
+    }
+    &--blocked{
+      img.actualImege, img.placeholder, img.wrong{
+        display: none;
+      }
+      span{
+        display: none;
+      }
+    }
+    &--wrong{
+      img.actualImege{
+        display: none;
+      }
+      img.placeholder{
+        display: block;
+      }
+      img.wrong{
+      }
+      span{
+        opacity: 0;
+      }
+    }
+  }
+}

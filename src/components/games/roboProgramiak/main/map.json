@@ -1,0 +1,91 @@
+[
+  {"id":1,
+    "matrix":[["w","s","t","t","t","s","t","t"],
+              ["w","t","fl","h","t1","h","fr","s"],
+              ["w","t","t","s","fd","t","t","t"],
+              ["w","t","t","s","t","t","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 6},
+    "directionArrows": true,
+    "timeTravelArea": {"x": 4, "y": 2},
+    "throwArea": {"x": 5, "y": 1, "active": false},
+    "toCollect":[
+      {"id":1, "x":2, "y":1, "name": "obj1", "multiple": 1}
+    ]
+  },
+  {"id":2,
+    "matrix":[["w","r","h","h","h","h","fr","t"],
+              ["w","v","s","tt","t","t","tt","s"],
+              ["w","u","h","h","fr","t","t","t"],
+              ["w","t","t","s","t","t","t","t"]],
+    "orientation": 3,
+    "start": {"row": 2, "col": 4},
+    "directionArrows": true,
+    "timeTravelArea": {"x": 6, "y": 0},
+    "throwArea": {"x": 5, "y": 1, "active": false},
+    "toCollect":[
+      {"id":1, "x":2, "y":0, "name": "obj1", "multiple": 1}
+    ]
+  },
+  {"id":3,
+    "matrix":[["w","r","h","h","h","t1","fr","tt"],
+              ["w","v","s","tt","t","sph","tt","t"],
+              ["w","u","h","h","h","d","t","t"],
+              ["w","t","t","s","t","t","t","tt"]],
+    "orientation": 2,
+    "start": {"row": 0, "col": 6},
+    "directionArrows": true,
+    "timeTravelArea": {"x": 4, "y": 2},
+    "throwArea": {"x": 5, "y": 1, "active": false},
+    "toCollect":[
+      {"id":1, "x":2, "y":0, "name": "obj1", "multiple": 1}
+    ]
+  },
+  {"id":4,
+    "matrix":[["w","r","h","h","h","h","h","l"],
+            ["w","v","s","tt","t","tt","tt","v"],
+            ["w","v","s","t","fu","t","t","v"],
+            ["w","u","h","h","d","t","t","fd"]],
+    "orientation": 2,
+    "start": {"row": 2, "col": 4},
+    "directionArrows": true,
+    "timeTravelArea": {"x": 7, "y": 3},
+    "throwArea": {"x": 5, "y": 1, "active": false},
+    "toCollect":[
+      {"id":1, "x":2, "y":0, "name": "obj1", "multiple": 1},
+      {"id":2, "x":6, "y":0, "name": "obj2", "multiple": 1}
+    ]
+  },
+  {"id":5,
+    "matrix":[["tt","r","h","h","h","h","l","s"],
+              ["tt","v","s","tt","t","tt","v","t"],
+              ["t","u","h","h","l","s","v","tt"],
+              ["s","tt","t","tt","fd","s","u","fr"]],
+    "orientation": 3,
+    "start": {"row": 3, "col": 7},
+    "directionArrows": true,
+    "timeTravelArea": {"x": 4, "y": 3},
+    "throwArea": {"x": 5, "y": 1, "active": false},
+    "toCollect":[
+      {"id":1, "x":2, "y":0, "name": "obj1", "multiple": 1},
+      {"id":2, "x":6, "y":0, "name": "obj2", "multiple": 2}
+    ]
+  },
+  {"id":6,
+    "matrix":[["w","r","h","h","h","h","h","l"],
+      ["w","v","s","tt","t","tt","tt","v"],
+      ["w","u","h","l","t","t","r","d"],
+      ["w","tt","t","u","h","spv","d","s"]],
+    "orientation": 3,
+    "start": {"row": 3, "col": 4},
+    "directionArrows": true,
+    "timeTravelArea": {"x": 6, "y": 3},
+    "throwArea": {"x": 5, "y": 1, "active": false},
+    "toCollect":[
+      {"id":1, "x":2, "y":0, "name": "obj1", "multiple": 1},
+      {"id":1, "x":1, "y":1, "name": "obj2", "multiple": 1},
+      {"id":1, "x":7, "y":2, "name": "obj3", "multiple": 1},
+      {"id":2, "x":6, "y":0, "name": "obj2", "multiple": 2}
+    ]
+  }
+]

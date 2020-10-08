@@ -1,0 +1,151 @@
+/*
+  Moduł opisujący background
+*/
+
+.background01{
+  background-color: #4fc3f7;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0px;
+  position: fixed;
+
+  .hills{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    img{
+      transform: translateX(-35%);
+      width: 300%;
+      top: 700px;
+      position: relative;
+    }
+  }
+  .cloudBox{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.6;
+
+    .cloud01{
+      width: 90px;
+      position: relative;
+      animation: quickBack1 8s infinite;
+      &:nth-of-type(1){
+        top: 40px;
+        left: 100px;
+        animation-duration: 5s;
+      }
+      &:nth-of-type(2){
+        top: 40px;
+        left: 400px;
+        width: 55px;
+      }
+      &:nth-of-type(3){
+        top: 60px;
+        left: 900px;
+        width: 75px;
+        animation-duration: 5s;
+      }
+      &:nth-of-type(4){
+        top: 120px;
+        left: 1050px;
+        width: 55px;
+      }
+      &:nth-of-type(5){
+        top: 40px;
+        left: 1150px;
+        width: 55px;
+      }
+      &:nth-of-type(6){
+        top: 20px;
+        left: 1300px;
+        width: 30px;
+        animation-duration: 4s;
+      }
+      &:nth-of-type(7){
+        top: 20px;
+        left: 1350px;
+        width: 30px;
+      }
+      &:nth-of-type(8){
+        top: 70px;
+        left: 1300px;
+        animation-duration: 3s;
+        width: 30px;
+      }
+      &:nth-of-type(9){
+        top: 650px;
+        left: -350px;
+        width: 55px;
+      }
+      &:nth-of-type(10){
+        top: 550px;
+        left: -200px;
+        width: 25px;
+      }
+      &:nth-of-type(11){
+        top: 670px;
+        left: -100px;
+        width: 25px;
+        animation-duration: 5s;
+      }
+      &:nth-of-type(12){
+        top: 700px;
+        left: -20px;
+        width: 25px;
+      }
+      &:nth-of-type(13){
+        top: 500px;
+        left: -100px;
+        width: 55px;
+      }
+      &:nth-of-type(18){
+        top: 590px;
+        left: 470px;
+        width: 80px;
+        z-index: -1;
+        transform: scale(-1, 1);
+        animation-duration: 5s;
+      }
+    }
+    .cloud02{
+      animation: quickBack1 8s infinite;
+      width: 90px;
+      position: relative;
+      &:nth-of-type(14){
+        top: 120px;
+        left: 70px;
+        width: 70px;
+      }
+      &:nth-of-type(15){
+        animation-duration: 5s;
+        top: 120px;
+        left: -400px;
+        width: 45px;
+      }
+    }
+    .cloud03{
+      animation: quickBack1 9s infinite;
+      width: 90px;
+      position: relative;
+      &:nth-of-type(16){
+        top: 620px;
+        left: 620px;
+        width: 70px;
+        transform: scale(-1, 1);
+        animation-duration: 5s;
+      }
+    }
+    .cloud04{
+      animation: quickBack1 7s infinite;
+      width: 90px;
+      position: relative;
+      &:nth-of-type(17){
+        top: 600px;
+        left: 800px;
+        width: 70px;
+        transform: scale(-1, 1);
+      }
+    }
+  }
+}

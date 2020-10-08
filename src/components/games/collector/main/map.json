@@ -1,0 +1,223 @@
+[
+  {"id":1,
+    "matrix":[["w","s","t","tt","t","s","t","t"],
+      ["w","t","fl","h","h","fr","t","s"],
+      ["w","t","tt","s","t","t","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":4, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":2, "y":1, "multiple": 1}
+    ],
+    "directionArrows": true
+  },
+  {"id":2,
+    "matrix":[["w","s","t","t","t","s","t","t"],
+      ["w","t","fl","h","h","h","fr","s"],
+      ["w","t","t","s","t","t","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 3},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":4, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":6, "y":1, "multiple": 1}
+    ],
+    "directionArrows": true
+  },
+  {"id":3,
+    "matrix":[["t","s","tt","fu","t","s","tt","t"],
+              ["t","r","h","d","t","t","tt","s"],
+              ["t","fd","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 2, "col": 1},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":2, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":3, "y":0, "multiple": 1}
+    ],
+    "directionArrows": true
+  },
+  {"id":4,
+    "matrix":[["t","s","tt","t","t","s","fu","t"],
+              ["t","tt","fl","h","h","h","d","s"],
+              ["t","s","t","s","t","tt","t","t"]],
+    "orientation": 3,
+    "start": {"row": 1, "col": 2},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":4, "y":1, "multiple": 1},
+      {"id": 2, "x":5, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":6, "y":0, "multiple": 2}
+    ],
+    "directionArrows": true
+  },
+  {"id":5,
+    "matrix":[["t","s","tt","t","tt","s","tt","t"],
+              ["t","r","h","h","h","fr","s","s"],
+              ["t","fd","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":2, "y":1, "multiple": 2},
+      {"id": 2, "x":4, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":1, "y":2, "multiple": 3}
+    ],
+    "directionArrows": true
+  },
+  {"id":6,
+    "matrix":[["t","s","fu","t","t","s","tt","t"],
+              ["t","r","t3","h","h","fr","s","s"],
+              ["t","fd","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":2, "y":0, "multiple": 2},
+      {"id": 2, "x":4, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":1, "y":2, "multiple": 3}
+    ],
+    "directionArrows": true
+  },
+  {"id":7,
+    "matrix":[["t","s","tt","t","tt","s","tt","t"],
+              ["t","r","h","h","h","fr","s","s"],
+              ["t","fd","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":2, "y":1, "multiple": 1},
+      {"id": 4, "x":3, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":1, "y":1, "multiple": 1},
+      {"id": 2, "x":1, "y":2, "multiple": 1}
+    ],
+    "directionArrows": true
+  },
+  {"id":8,
+    "matrix":[["t","s","tt","fu","t","s","tt","t"],
+              ["t","r","h","t3","h","fr","s","s"],
+              ["t","fd","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":4, "y":1, "multiple": 1},
+      {"id": 2, "x":1, "y":1, "multiple": 1},
+      {"id": 3, "x":3, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":3, "y":0, "multiple": 2},
+      {"id": 1, "x":1, "y":2, "multiple": 1}
+    ],
+    "directionArrows": true
+  },
+  {"id":9,
+    "matrix":[["t","s","fu","t","tt","s","tt","t"],
+              ["spv","t1","t3","h","h","h","h","spv"],
+              ["t","fd","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":2, "y":0, "multiple": 1},
+      {"id": 2, "x":4, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":1, "y":2, "multiple": 2}
+    ],
+    "directionArrows": true
+  },
+  {"id":10,
+    "matrix":[["t","s","sph","t","tt","s","tt","t"],
+              ["t","r","t3","h","h","h","spv","s"],
+              ["t","sph","t","s","t","tt","t","t"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 5},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 4, "x":4, "y":1, "multiple": 3}
+    ],
+    "honey":[
+      {"id": 1, "x":2, "y":1, "multiple": 3}
+    ],
+    "directionArrows": true
+  },
+  {"id":11,
+    "matrix":[["t","s","tt","t","tt","r","h","l"],
+              ["t","spv","h","h","h","t2","s","v"],
+              ["t","tt","t","s","t","u","spv","d"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 4},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":6, "y":0, "multiple": 1},
+      {"id": 2, "x":3, "y":1, "multiple": 2}
+    ],
+    "honey":[
+      {"id": 1, "x":7, "y":0, "multiple": 3}
+    ],
+    "directionArrows": true
+  },
+  {"id":12,
+    "matrix":[["t","s","tt","t","tt","r","spv","l"],
+      ["t","spv","h","h","h","t2","s","v"],
+      ["t","tt","t","s","t","u","h","d"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 4},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 2, "x":3, "y":1, "multiple": 2}
+    ],
+    "honey":[
+      {"id": 1, "x":7, "y":0, "multiple": 1},
+      {"id": 2, "x":7, "y":2, "multiple": 1}
+    ],
+    "directionArrows": true
+  },
+  {"id":13,
+    "matrix":[["t","s","tt","t","tt","r","h","l"],
+              ["t","fl","h","h","h","t2","tt","sph"],
+              ["t","tt","t","s","t","u","h","d"]],
+    "orientation": 4,
+    "start": {"row": 1, "col": 4},
+    "flowersToTake": 2,
+    "honeyToBuild": 2,
+    "flowers":[
+      {"id": 1, "x":2, "y":1, "multiple": 2},
+      {"id": 2, "x":3, "y":1, "multiple": 1}
+    ],
+    "honey":[
+      {"id": 1, "x":7, "y":0, "multiple": 2},
+      {"id": 2, "x":7, "y":2, "multiple": 1}
+    ],
+    "directionArrows": true
+  }
+]

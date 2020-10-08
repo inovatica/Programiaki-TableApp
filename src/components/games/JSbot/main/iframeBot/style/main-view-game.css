@@ -1,0 +1,313 @@
+.mainTableSection {
+  width: 100%;
+  background-color: #C9ECCE;
+  border-radius: 0% 0% 20px 20px; }
+  .mainTableSection__wrap {
+    padding: 10px; }
+    .mainTableSection__wrap__isOrderImportantContainer {
+      width: 100%;
+      box-sizing: border-box;
+      border: 5px solid #413C58;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center; }
+      .mainTableSection__wrap__isOrderImportantContainer div {
+        padding: 10px 5px 10px 5px;
+        justify-content: center; }
+      .mainTableSection__wrap__isOrderImportantContainer label {
+        padding-right: 20px;
+        padding-left: 20px; }
+      .mainTableSection__wrap__isOrderImportantContainer input[type="radio"] {
+        opacity: 0; }
+        .mainTableSection__wrap__isOrderImportantContainer input[type="radio"] + label::before {
+          content: "";
+          display: inline-block;
+          width: 34px;
+          height: 34px;
+          position: absolute;
+          transform: translate(-120%, -20%);
+          border: 2px solid #413C58;
+          border-radius: 50%;
+          box-sizing: border-box; }
+        .mainTableSection__wrap__isOrderImportantContainer input[type="radio"]:checked + label::before {
+          background-color: green; }
+    .mainTableSection__wrap__controlTable {
+      padding-bottom: 10px;
+      width: 100%; }
+      .mainTableSection__wrap__controlTable button {
+        display: block;
+        float: left;
+        width: 49%;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        border: 5px solid #413C58;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        border-radius: 10px;
+        color: #413C58;
+        font-family: inherit;
+        font-size: 20px;
+        outline: none;
+        margin-top: 5px; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard {
+      min-height: 170px;
+      width: 32.32%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      float: left;
+      background-color: white;
+      border-bottom: 5px solid #413C58;
+      border-radius: 10px;
+      margin-top: 10px; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:first-of-type {
+        display: none;
+        padding: 2px; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(2) span:nth-of-type(2) {
+        display: none; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(2) span:nth-of-type(1) {
+        display: inline; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(3) {
+        display: none;
+        padding: 2px; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(4) {
+        display: none; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        border: 5px solid #413C58;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        border-radius: 10px;
+        color: #413C58;
+        font-family: inherit;
+        font-size: 20px;
+        outline: none;
+        padding-top: 5px;
+        background-color: #E0ACD5; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__contentCart img {
+        width: 70%;
+        max-height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard__contentCart span {
+        font-size: 18px;
+        display: block;
+        text-align: center; }
+    .mainTableSection__wrap__cardsTableContainer .singleCardError {
+      background-color: red; }
+    .mainTableSection__wrap__cardsTableContainer .singleCardEmpty {
+      height: 175px;
+      width: 32.32%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      float: left;
+      background-color: white;
+      border-bottom: 5px solid #413C58;
+      border-top: 5px solid #413C58;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-sizing: border-box; }
+      .mainTableSection__wrap__cardsTableContainer .singleCardEmpty span:nth-of-type(2) {
+        display: none; }
+      .mainTableSection__wrap__cardsTableContainer .singleCardEmpty span:nth-of-type(1) {
+        display: block; }
+      .mainTableSection__wrap__cardsTableContainer .singleCardEmpty span {
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+    .mainTableSection__wrap__cardsTableContainer .singleEmptyNotAvaible {
+      background-color: lightgrey; }
+      .mainTableSection__wrap__cardsTableContainer .singleEmptyNotAvaible span:nth-of-type(1) {
+        display: none; }
+      .mainTableSection__wrap__cardsTableContainer .singleEmptyNotAvaible span:nth-of-type(2) {
+        display: block; }
+
+.cardChoiceSection {
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #C9ECCE; }
+  .cardChoiceSection__wrap {
+    padding: 10px; }
+    .cardChoiceSection__wrap .singleCard {
+      min-height: 170px;
+      width: 32.32%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+      float: left;
+      background-color: white;
+      border-bottom: 5px solid #413C58;
+      border-radius: 10px;
+      margin-top: 10px; }
+      .cardChoiceSection__wrap .singleCard__extraOptions button:first-of-type {
+        display: none; }
+      .cardChoiceSection__wrap .singleCard__extraOptions button:nth-of-type(2) {
+        display: none; }
+      .cardChoiceSection__wrap .singleCard__extraOptions button:nth-of-type(3) {
+        display: none; }
+      .cardChoiceSection__wrap .singleCard__extraOptions button {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        border: 5px solid #413C58;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        border-radius: 10px;
+        color: #413C58;
+        font-family: inherit;
+        font-size: 20px;
+        outline: none;
+        padding-top: 5px;
+        background-color: #C9ECCE; }
+      .cardChoiceSection__wrap .singleCard__contentCart img {
+        width: 70%;
+        max-height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; }
+      .cardChoiceSection__wrap .singleCard__contentCart span {
+        font-size: 18px;
+        display: block;
+        text-align: center; }
+
+@media screen and (min-width: 500px) {
+  .mainTableSection__wrap__cardsTableContainer .singleCard {
+    width: 24%; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:first-of-type {
+      display: block; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(3) {
+      display: block; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(2) span:nth-of-type(2) {
+      display: inline; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(2) span:nth-of-type(1) {
+      display: none; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button:nth-of-type(4) {
+      display: none; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__extraOptions button {
+      width: 32.32%; }
+  .mainTableSection__wrap__cardsTableContainer .singleCardEmpty {
+    width: 24%; }
+
+  .cardChoiceSection {
+    margin-top: 50px; }
+    .cardChoiceSection__wrap .singleCard {
+      width: 24%; } }
+@media screen and (min-width: 700px) {
+  .mainTableSection__wrap__isOrderImportantContainer {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid #413C58;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .mainTableSection__wrap__cardsTableContainer .singleCard {
+    width: 19%; }
+    .mainTableSection__wrap__cardsTableContainer .singleCard__contentCart img {
+      width: 60%;
+      max-height: 100px; }
+  .mainTableSection__wrap__cardsTableContainer .singleCardEmpty {
+    width: 19%; }
+
+  .cardChoiceSection {
+    margin-top: 50px; }
+    .cardChoiceSection__wrap .singleCard {
+      width: 19%; }
+      .cardChoiceSection__wrap .singleCard__contentCart img {
+        width: 60%;
+        max-height: 100px; } }
+@media screen and (min-width: 1000px) {
+  .mainWrap {
+    height: 100%; }
+
+  .mainTableSection {
+    float: left;
+    width: 66%;
+    height: 100%; }
+    .mainTableSection__wrap {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+      .mainTableSection__wrap__controlTable {
+        padding-bottom: 10px;
+        width: 100%; }
+        .mainTableSection__wrap__controlTable button {
+          display: block;
+          float: left;
+          width: 24%;
+          height: 120px;
+          padding: 0px;
+          margin: 0px;
+          box-sizing: border-box;
+          border: 5px solid #413C58;
+          margin-left: 0.5%;
+          margin-right: 0.5%;
+          border-radius: 10px;
+          color: #413C58;
+          font-family: inherit;
+          font-size: 20px;
+          outline: none;
+          margin-top: 5px; }
+      .mainTableSection__wrap__cardsTableContainer .singleCard {
+        width: 19%;
+        height: 180px; }
+        .mainTableSection__wrap__cardsTableContainer .singleCard__contentCart img {
+          height: 120px; }
+      .mainTableSection__wrap__cardsTableContainer .singleCardEmpty {
+        width: 19%;
+        height: 185px; }
+
+  .cardChoiceSection {
+    float: left;
+    width: 34%;
+    height: 100%;
+    margin-top: 0px;
+    overflow: auto; }
+    .cardChoiceSection__wrap .singleCard {
+      width: 32%; }
+      .cardChoiceSection__wrap .singleCard__contentCart img {
+        width: 80%; } }
+#buttonNavigation {
+  display: block;
+  float: left;
+  width: 20%;
+  height: 60px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: 5px solid #413C58;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  border-radius: 10px;
+  color: #413C58;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  margin-top: 5px; }
+  #buttonNavigation a {
+    text-decoration: none;
+    color: #413C58;
+    padding: 10px; }
+
+.buttonDisabled {
+  background-color: grey !important;
+  opacity: 0.5; }
+
+/*# sourceMappingURL=main-view-game.css.map */
